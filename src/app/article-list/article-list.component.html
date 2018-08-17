@@ -11,10 +11,13 @@
 
 
 <div class="card" style="width: auto; height: auto;"  *ngFor="let currentArticle of childArticleList | completeness:filterByCompleteness">
+  <img class="card-img-top" src="assets/sm-{{currentArticle.picture}}">
+
   <h4 class="link"><a (click)="readButtonClicked(currentArticle)">{{currentArticle.title}}</a>
     <input *ngIf="currentArticle.done === true" type="checkbox" checked (click)="toggleDone(currentArticle, false)"/>
     <input *ngIf="currentArticle.done === false" type="checkbox" (click)="toggleDone(currentArticle, true)"/>
-</h4>
+  </h4>
+
   <!-- <button (click)="readButtonClicked(currentArticle)" class ="btn btn-success">read</button> -->
 
 </div>

@@ -41,5 +41,13 @@ h4.link:hover {
   background-color: lightyellow;
   cursor: pointer;
   display: inline-block;
+}
 
+img {
+  margin-bottom: 5px;
+}
+img.imagethumb {
+  float: left;
+  height: 136px;
+  width: 136px;
 }
