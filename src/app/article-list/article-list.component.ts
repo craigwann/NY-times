@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Article } from '../models/article.model';
 
 
@@ -7,11 +7,9 @@ import { Article } from '../models/article.model';
   templateUrl: './article-list.component.html',
   styleUrls: ['./article-list.component.css']
 })
-export class ArticleListComponent implements OnInit {
+export class ArticleListComponent {
+  @Input() childArticleList: Article[];
+  @Output() clickSender = new EventEmitter();
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }
