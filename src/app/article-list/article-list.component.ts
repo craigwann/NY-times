@@ -9,9 +9,19 @@ import { Article } from '../models/article.model';
 export class ArticleListComponent {
   @Input() childArticleList: Article[];
   @Output() clickSender = new EventEmitter();
+  filterByCompleteness: string = "incompleteArticles";
 
   readButtonClicked(articleToRead: Article) {
     this.clickSender.emit(articleToRead);
   }
+
+  onChange(optionFromMenu) {
+  this.filterByCompleteness = optionFromMenu;
+}
+
+  toggleDone(clickedArticle: Article, setCompleteness: boolean) {
+       clickedArticle.done = setCompleteness;
+    }
+
 
 }
