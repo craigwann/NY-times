@@ -2,14 +2,44 @@
 .card {
   padding: 10px;
   margin: 10px;
+}
+.card .left {
+  padding: 10px;
+  margin: 10px;
   float: left;
 }
+.card .right {
+  padding: 10px;
+  margin: 10px;
+  float: right;
+}
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: serif;
     font-weight: bold;
 }
 
+h4 {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
 p {
   font-family: serif;
+}
+
+h4, .link {
+  color: blue;
+  text-decoration: underline;
+  display: inline-block;
+}
+h4:hover {
+  color: darkblue;
+  text-decoration: underline;
+  background-color: lightblue;
+  cursor: pointer;
+  display: inline-block;
+
 }

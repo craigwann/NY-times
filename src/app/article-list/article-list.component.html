@@ -1,14 +1,20 @@
-<select (change)="onChange($event.target.value)">
-  <option value="allArticles">All Articles</option>
-  <option value="completedArticles">Read Articles</option>
-  <option value="incompleteArticles" selected="selected">Unread Articles</option>
-</select>
+<div class="form-group">
+  <label for="selectFormControl">Filter (Un)Read Articles</label>
+
+  <select class="form-control form-control-sm" id="selectFormControl" (change)="onChange($event.target.value)">
+    <option value="allArticles">All Articles</option>
+    <option value="completedArticles">Read Articles</option>
+    <option value="incompleteArticles" selected="selected">Unread Articles</option>
+  </select>
+
+</div>
 
 
-<div class="card" style="width: 300px; height: auto;"  *ngFor="let currentArticle of childArticleList | completeness:filterByCompleteness">
-  <h4>{{currentArticle.title}}     <input *ngIf="currentArticle.done === true" type="checkbox" checked (click)="toggleDone(currentArticle, false)"/>
+<div class="card" style="width: auto; height: auto;"  *ngFor="let currentArticle of childArticleList | completeness:filterByCompleteness">
+  <h4><a (click)="readButtonClicked(currentArticle)">{{currentArticle.title}}</a>
+    <input *ngIf="currentArticle.done === true" type="checkbox" checked (click)="toggleDone(currentArticle, false)"/>
     <input *ngIf="currentArticle.done === false" type="checkbox" (click)="toggleDone(currentArticle, true)"/>
 </h4>
-  <button (click)="readButtonClicked(currentArticle)" class ="btn btn-success">read</button>
+  <!-- <button (click)="readButtonClicked(currentArticle)" class ="btn btn-success">read</button> -->
 
 </div>
