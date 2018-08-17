@@ -1,7 +1,5 @@
-<div class="card" *ngFor="let currentArticle of childArticleList">
+<div class="card" style="width: 300px; height: auto;"  *ngFor="let currentArticle of childArticleList">
   <h4>{{currentArticle.title}}</h4>
   <button (click)="readButtonClicked(currentArticle)" class ="btn btn-success">read</button>
-
-  <app-article-read [childArticleRead]="selectedArticle"  (clickedDone)="finishedReading()">READ</app-article-read>
 
 </div>
