@@ -1,4 +1,12 @@
-# Nyt
+# New York Times
+
+#### Epicodus Angular: site rebuild, 08/03/2018
+
+#### By Craig Wann
+
+## Description
+
+Website rebuild of New York Times.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
