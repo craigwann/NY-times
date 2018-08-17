@@ -10,6 +10,11 @@ Website rebuild of New York Times.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+## Specs
+1. As a user, I want to be able to see a list of articles.
+1. As a user, I want to be able to select an article and see the full article with images.
+1. As a user, I want to be able to checkoff which articles I have read and filter the list.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
