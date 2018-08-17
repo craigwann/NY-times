@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 .card {
   padding: 10px;
-  margin: 10px;
+  margin: 6px;
 }
-.card .left {
+.card.left {
   padding: 10px;
   margin: 10px;
   float: left;
 }
-.card .right {
+.card.right {
   padding: 10px;
   margin: 10px;
   float: right;
@@ -30,15 +30,15 @@ p {
   font-family: serif;
 }
 
-h4, .link {
+h4.link {
+  font-family: sans-serif;
   color: blue;
-  text-decoration: underline;
   display: inline-block;
 }
-h4:hover {
+h4.link:hover {
   color: darkblue;
   text-decoration: underline;
-  background-color: lightblue;
+  background-color: lightyellow;
   cursor: pointer;
   display: inline-block;
 

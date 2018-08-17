@@ -11,7 +11,7 @@
 
 
 <div class="card" style="width: auto; height: auto;"  *ngFor="let currentArticle of childArticleList | completeness:filterByCompleteness">
-  <h4><a (click)="readButtonClicked(currentArticle)">{{currentArticle.title}}</a>
+  <h4 class="link"><a (click)="readButtonClicked(currentArticle)">{{currentArticle.title}}</a>
     <input *ngIf="currentArticle.done === true" type="checkbox" checked (click)="toggleDone(currentArticle, false)"/>
     <input *ngIf="currentArticle.done === false" type="checkbox" (click)="toggleDone(currentArticle, true)"/>
 </h4>
