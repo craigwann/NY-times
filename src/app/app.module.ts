@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleReadComponent } from './article-read/article-read.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ArticleReadComponent
   ],
   imports: [
     BrowserModule

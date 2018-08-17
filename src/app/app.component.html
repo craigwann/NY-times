@@ -5,7 +5,7 @@
     <p>for {{month}}/{{date}}/{{year}}</p>
   </div>
 
-<app-article-list [childArticleList]="masterArticleList"></app-article-list>
-
+<app-article-list [childArticleList]="masterArticleList" (clickSender)="readArticle($event)"></app-article-list>
+<app-article-read [childArticleRead]="selectedArticle"  (clickedDone)="finishedReading()"></app-article-read>
 
 </div>

@@ -11,5 +11,8 @@ export class ArticleListComponent {
   @Input() childArticleList: Article[];
   @Output() clickSender = new EventEmitter();
 
+  readButtonClicked(articleToRead: Article) {
+    this.clickSender.emit(articleToRead);
+  }
 
 }

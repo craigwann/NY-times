@@ -26,4 +26,8 @@ export class AppComponent {
     new Article('Aretha Franklin Dies at 76', 'Aretha Franklin, universally acclaimed as the “Queen of Soul” and one of America’s greatest singers in any style, died on Thursday at her home in Detroit. She was 76.The cause was advanced pancreatic cancer, her publicist, Gwendolyn Quinn, said. In her indelible late-1960s hits, Ms. Franklin brought the righteous fervor of gospel music to secular songs that were about much more than romance. Hits like “Do Right Woman — Do Right Man,” “Think,” “(You Make Me Feel Like) A Natural Woman” and “Chain of Fools” defined a modern female archetype: sensual and strong, long-suffering but ultimately indomitable, loving but not to be taken for granted. When Ms. Franklin sang “Respect,” the Otis Redding song that became her signature, it was never just about how a woman wanted to be greeted by a spouse coming home from work. It was a demand for equality and freedom and a harbinger of feminism, carried by a voice that would accept nothing less..', 'aretha.jpg')
   ]
 
+  readArticle(clickedArticle) {
+    this.selectedArticle = clickedArticle;
+  }
+
 }
