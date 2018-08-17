@@ -30,4 +30,8 @@ export class AppComponent {
     this.selectedArticle = clickedArticle;
   }
 
+  finishedReading() {
+    this.selectedArticle = null;
+  }
+
 }
