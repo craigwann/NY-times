@@ -13,7 +13,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Specs
 1. As a user, I want to be able to see a list of articles.
 1. As a user, I want to be able to select an article and see the full article with images.
-1. As a user, I want to be able to checkoff which articles I have read and filter the list.
+1. As a user, I want to be able to filter all articles.
+1. As a user, I want to be able to filter which articles I have not read.
+1. As a user, I want to be able to filter which articles I have read.
+
+##Future Specs
+1. As a user, I want to be able to filter articles by category (world, arts, sports, technology, business...).
+
 
 ## Development server
 
