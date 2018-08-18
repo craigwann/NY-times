@@ -4,15 +4,15 @@
   margin: 6px;
 }
 .card.left {
-  padding: 10px;
-  margin: 10px;
+  padding: 6px;
+  margin: 3px;
   float: left;
 }
-.card.right {
+/* .card.right {
   padding: 10px;
   margin: 10px;
   float: right;
-}
+} */
 
 h1, h2, h3 {
     font-family: serif;
@@ -48,6 +48,7 @@ img {
 }
 img.imagethumb {
   float: left;
-  height: 136px;
-  width: 136px;
+  margin-right: 5px;
+  height: 100px;
+  width: 100px;
 }
