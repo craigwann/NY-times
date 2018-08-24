@@ -19,6 +19,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ##Future Specs
 1. As a user, I want to be able to filter articles by category (world, arts, sports, technology, business...).
+1. As a user, I want to be submit articles directly to site.
 
 
 ## Development server
