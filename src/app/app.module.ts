@@ -13,6 +13,7 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleReadComponent } from './article-read/article-read.component';
 import { CompletenessPipe } from './completeness.pipe';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     ArticleListComponent,
     ArticleReadComponent,
     CompletenessPipe,
-    WelcomeComponent
+    WelcomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
