@@ -5,19 +5,18 @@
     <h3>for {{month}}/{{date}}/{{year}}</h3>
   </div>
 
+  <router-outlet></router-outlet>
+
   <div class="row">
     <div class="col-md-4">
-    <div class="card left" style="width: auto; height: auto;">
-      <app-article-list [childArticleList]="masterArticleList" (clickSender)="readArticle($event)"></app-article-list>
+      <div class="card left" style="width: auto; height: auto;">
+        <app-article-list [childArticleList]="masterArticleList" (clickSender)="readArticle($event)"></app-article-list>
+      </div>
     </div>
-  </div>
-
-  <div class="col-md-8">
-    <!-- <div class="card right" style="width: auto; height: auto;"> -->
-      <app-article-read [childArticleRead]="selectedArticle"  (clickedDone)="finishedReading()"></app-article-read>
-    <!-- </div> -->
-  </div>
-
+    <div class="col-md-8">
+      <!-- <div class="card right" style="width: auto; height: auto;"> -->
+        <app-article-read [childArticleRead]="selectedArticle"  (clickedDone)="finishedReading()"></app-article-read>
+      <!-- </div> -->
+    </div>
   </div> <!---end of ROW-->
-
 </div>

@@ -7,7 +7,7 @@ import { Article } from './models/article.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'NY Times';
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
   date: number = this.currentTime.getDate();
