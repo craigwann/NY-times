@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit  } from '@angular/core';
 import { Article } from './models/article.model';
+import { ArticleService } from './article.service';
 
 @Component({
   selector: 'app-root',
@@ -15,10 +16,13 @@ export class AppComponent {
   day: number = this.currentTime.getDay();
 
   selectedArticle = null;
+  masterArticleList: Article[];
 
-  masterArticleList: Article[] = [
+  constructor() { }
 
-  ]
+  ngOnInit() {
+  }
+
 
   readArticle(clickedArticle) {
     this.selectedArticle = clickedArticle;

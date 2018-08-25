@@ -1,8 +1,8 @@
 <div *ngIf="childArticleRead">
   <div class="card" style="width: auto; height: auto;" >
     <img class="card-img-top"  src="assets/{{childArticleRead.picture}}">
-
     <p>{{childArticleRead.content}}</p>
+    <p>article ID: {{childArticleRead.id}}</p>
     <button class="btn btn-info" (click)="finishedReading()">Done</button>
   </div>
 
