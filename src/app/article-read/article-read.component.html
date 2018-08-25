@@ -5,6 +5,10 @@
     <p>article ID: {{childArticleRead.id}}</p>
     <button class="btn btn-info" (click)="finishedReading()">Done</button>
   </div>
+</div>
 
-
+<div *ngFor="let article of articles" (click)="goToDetailPage(article)" class="card card-default">
+  <div class="card-body">
+    <h3>{{article.title}}</h3>
+  </div>
 </div>

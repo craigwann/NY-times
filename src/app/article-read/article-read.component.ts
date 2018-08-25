@@ -17,19 +17,21 @@ import { ArticleService } from '../article.service';
 export class ArticleReadComponent implements OnInit {
   @Input() childArticleRead: Article;
   @Output() clickedDone = new EventEmitter();
-
+  articles: FirebaseListObservable<any[]>;
   articleId: number = null;
+  currentRoute: string = this.router.url;
 
-  constructor(private route: ActivatedRoute, private location: Location, private ArticleService: ArticleService) {}
+
+  constructor(private route: ActivatedRoute, private router: Router, private location: Location, private articleService: ArticleService) {}
 
   ngOnInit() {
-    this.route.params.forEach((urlParameters) => {
-      this.articleId = parseInt(urlParameters['id']);
-    });
+    this.articles = this.articleService.getArticles();
   }
   finishedReading() {
     this.clickedDone.emit();
   }
-
+  goToDetailPage(clickedArticle) {
+    this.router.navigate(['articles', clickedArticle.id]);
+  }
 
 }
