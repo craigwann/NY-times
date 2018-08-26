@@ -21,7 +21,6 @@ export class ArticleReadComponent implements OnInit {
   articleId: number = null;
   currentRoute: string = this.router.url;
 
-
   constructor(private route: ActivatedRoute, private router: Router, private location: Location, private articleService: ArticleService) {}
 
   ngOnInit() {

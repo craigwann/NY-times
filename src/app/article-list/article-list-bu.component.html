@@ -10,14 +10,7 @@
 </div>
 
 
-<div *ngFor="let article of articles | async"  class="card card-default">
-  <div class="card-body">
-    <h3>{{article.title}}</h3>
-  </div>
-</div>
-
-
-<div class="row align-items-center"  *ngFor="let currentArticle of childArticleList | async | completeness:filterByCompleteness">
+<div class="row align-items-center"  *ngFor="let currentArticle of childArticleList | completeness:filterByCompleteness">
   <div class="col-5">
     <img class="imagethumb" src="assets/sm-{{currentArticle.picture}}">
   </div>

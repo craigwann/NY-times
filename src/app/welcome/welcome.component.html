@@ -1,1 +1,11 @@
 <h2>Welcome to the New York Times!</h2>
+<div class="container">
+
+  <div *ngFor="let article of articles | async" class="">
+    <h4>{{article.title}}</h4>
+    console.log(article)
+  </div>
+
+
+
+</div>
